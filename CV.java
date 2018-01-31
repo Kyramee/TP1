@@ -27,4 +27,17 @@ public class CV {
 		}
 		System.out.println( "Attentes du cours : " + attentes + "\n");
 	}
+	
+	public static void main(String[] args) {
+		System.out.println( "Bienvenue chez Barette!\n" );
+		
+		String[] cA = {"Patient","Bilingue","Capable de marcher en machant de la gum"};
+		CV adrien = new CV("Cote-Laferriere", "Adrien", "Vendeur chez Best Buy", 2, cA, "Etre bien payer");
+		
+		String[] cS = {"Polyvalent","Ponctuelle","Capable de dormir les yeux ouverts"};
+		CV steven = new CV("Desroches", "Steven", "Etudiant", 5, cS, "Pouvoir etre chef d'équipe");
+		
+		adrien.affiche();
+		steven.affiche();
+	}
 }
