@@ -14,4 +14,17 @@ public class CV {
 		this.competences = competences;
 		this.attentes = attentes;
 	}
+	
+	public void affiche() {
+		System.out.println("nom : " + nom);
+		System.out.println("prénom : " + prenom);
+		System.out.println("formation : " + formation);
+		
+		System.out.println("Nombre d'année d'expérience : " + experiance);
+		for ( String string : competences ) {
+			System.out.print("compétences : ");
+			System.out.println( "     " + string );
+		}
+		System.out.println( "Attentes du cours : " + attentes + "\n");
+	}
 }
